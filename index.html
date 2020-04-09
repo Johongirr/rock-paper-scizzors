@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rock Paper Scizzors</title>
+</head>
+<body>
+    <main id="main">
+        <div class="container">
+            <h1 class="game__title">
+                Rock Paper Scizzors
+            </h1>
+            <p class="game__round" id="round">Round 1</p>
+            <div class="game__container">
+                <div class="player__container">
+                    <p><span  class="game__score">Your Score</span> 
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                    </p>
+                    <div class="images">
+                        <img src="images/paper.png"   alt="paper">
+                        <img src="images/rock.png" alt="rock">
+                        <img src="images//scizzors.png" alt="scizzors">
+                    </div>
+                </div>
+                <div class="computer__container">
+                    <p><span  class="game__score">Computer Score</span> 
+                        <span class="star">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                        </span>
+                    </p>
+                    <div class="images">
+                        <img src="" alt="" class="computer-img">
+                    </div>
+                </div>
+            </div>
+            <p id="message"></p>  
+               
+        </div>
+
+    </main>
+     
+    <!-- modal -->
+    <div class="modal__container">
+        <div class="modal">
+            <p>YOU WON!!</p>
+            <p class="score__container"><span class="score-player">2</span>:<span class="score-computer">1</span>  </p>
+            <a href="#" class="btn replay">PLAY AGAIN</a>
+        </div>
+    </div>
+    
+    <script src="index.js" defer></script>
+</body>
+</html>
