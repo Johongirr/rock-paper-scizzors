@@ -85,7 +85,7 @@ img {
 .modal__container .modal {
     width: 95%;
     max-width: 600px;
-    margin: 3rem auto;
+    margin: 6rem auto;
     text-align: center;
     color: #fff;
     font-weight: bold;
@@ -162,10 +162,9 @@ img {
         
     }
 }
-<<<<<<< HEAD
 @media (max-width: 500px){
     img {
-        max-width: 120px;
+        max-width: 100px;
     }
     .game__title {
         font-size: 2.7rem;
@@ -179,6 +178,7 @@ img {
     .game__container p i {
         font-size: 1.2rem;
     }
+    .computer__container {
+        margin-top: 2rem;
+    }
 }
-=======
->>>>>>> 9a5863b50404ea5b6b0b6191a12d2592206cd8f8
