@@ -162,3 +162,20 @@ img {
         
     }
 }
+@media (max-width: 500px){
+    img {
+        max-width: 120px;
+    }
+    .game__title {
+        font-size: 2.7rem;
+    }
+    .game__round {
+        font-size: 2.4rem;
+    }
+    .game__container .game__score {
+        font-size: 1.6rem;
+    }
+    .game__container p i {
+        font-size: 1.2rem;
+    }
+}
