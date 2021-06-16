@@ -89,7 +89,7 @@ img.active {
     height: 100%;
     background-color: rgba(102, 102, 102, 0.699);
     overflow: hidden;
-    display: none;
+     visibility: hidden;
 }
 .modal__container .modal {
     width: 95%;
@@ -102,6 +102,11 @@ img.active {
     color: #fff;
     background-color: rgb(81, 120, 236);
     font-weight: bold;
+    transition: all .5s ease-in-out;
+    transform: translate3d(200%,0,0);
+}
+.modal__container .modal.active {
+    transform: translate3d(0,0,0);
 }
 .modal__container p {
     font-size: 2rem;

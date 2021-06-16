@@ -19,7 +19,9 @@ let rounds = 1;
  
 
  function displayModal(){
-  modalContainer.style.display = 'block';
+  modalContainer.style.visibility = "visible"
+  const modal = modalContainer.querySelector(".modal");
+  modal.classList.add("active");
   
  }
  function hideModal(){
