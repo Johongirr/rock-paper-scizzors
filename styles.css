@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap');
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    transition: all .2s ease-in-out;
 }
+ 
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #777;
     background-color: cornflowerblue;
+    min-height: 100vh;
 }
 span {
     display: block;
@@ -25,12 +30,15 @@ img {
     height: auto;
     cursor: pointer;
 }
+img.active {
+    transform: scale(1.1);
+}
 #main {
     height: 100vh;
 }
 .game__title {
-    color: #000;
-    font-family: Josefin, sans-serif;
+    color: rgb(2, 6, 39);
+    font-family:cursive;
     font-size: 4rem;
     text-align: center;
     margin-bottom: 1.5rem;
@@ -79,15 +87,20 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(95, 13, 116, 0.9);
+    background-color: rgba(102, 102, 102, 0.699);
+    overflow: hidden;
     display: none;
 }
 .modal__container .modal {
     width: 95%;
     max-width: 600px;
+    height: 500px;
+    border-radius: 10px;
+    padding-top: 3rem;
     margin: 6rem auto;
     text-align: center;
     color: #fff;
+    background-color: rgb(81, 120, 236);
     font-weight: bold;
 }
 .modal__container p {
@@ -97,6 +110,7 @@ img {
 .modal__container .score__container {
     font-size: 4rem;
     font-weight: bold;
+    padding: 1.2rem 0;
 }
 .modal__container span {
     display: inline-block;
@@ -116,6 +130,9 @@ img {
     font-size: 1.4rem;
     padding: 1rem 1.5rem;
     border-radius: 5px;
+}
+.modal__container .replay {
+    color: rgba(2, 6, 39, 0.815);
 }
 
 
